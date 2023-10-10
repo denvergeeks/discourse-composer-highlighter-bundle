@@ -9,6 +9,13 @@ async function applyInserted(element) {
   }
 }
 
+async function applyDeleted(element) {
+  const deleted = element.querySelectorAll("del");
+  if (!deleted.length) {
+    return;
+  }
+}
+
 export default apiInitializer("0.11.1", (api) => {
   const { iconNode } = require("discourse-common/lib/icon-library");
   let icon = iconNode("highlighter");
@@ -50,22 +57,7 @@ export default apiInitializer("0.11.1", (api) => {
     },
     { id: "wrap-inserted" }
   );
-});
 
-
-
-
-
-
-
-async function applyDeleted(element) {
-  const deleted = element.querySelectorAll("del");
-  if (!deleted.length) {
-    return;
-  }
-}
-
-export default apiInitializer("0.11.1", (api) => {
   const { iconNode } = require("discourse-common/lib/icon-library");
   let icon = iconNode("highlighter");
   const currentLocale = I18n.currentLocale();
@@ -106,4 +98,18 @@ export default apiInitializer("0.11.1", (api) => {
     },
     { id: "wrap-deleted" }
   );
+
+
+  
 });
+
+
+
+
+
+
+
+
+
+
+
