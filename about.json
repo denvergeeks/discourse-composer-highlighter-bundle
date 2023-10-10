@@ -3,7 +3,7 @@
   "component": true,
   "authors": ["denvergeeks", "Jay Pfaffman"],
   "about_url": "https://github.com/denvergeeks/discourse-composer-delete",
-  "about": "Adds an delete (<del>this</del>) button to the composer",
+  "about": "Adds a delete (<del>this</del>) button to the composer",
   "version": 0.1,
   "assets": {
    "icons-sprite": "/assets/highlighter.svg"
