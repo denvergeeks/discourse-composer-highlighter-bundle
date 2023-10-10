@@ -58,7 +58,8 @@ export default apiInitializer("0.11.1", (api) => {
     { id: "wrap-inserted" }
   );
 
-  const { iconNode } = require("discourse-common/lib/icon-library");
+
+  
   let icon = iconNode("highlighter");
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.deleted_button_title = I18n.t(themePrefix("composer_deleted_button_title"));
