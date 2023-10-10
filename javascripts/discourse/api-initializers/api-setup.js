@@ -15,9 +15,9 @@ export default apiInitializer("0.11.1", (api) => {
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.deleted_button_title = I18n.t(themePrefix("composer_deleted_button_title"));
   // I18n.translations[currentLocale].js.composer.deleted_button_text = I18n.t(themePrefix("composer_deleted_button_text"));
-  I18n.translations[currentLocale].js.deleted_button_title = "Delete Text";
+  I18n.translations[currentLocale].js.deleted_button_title = "Deleted Text";
   I18n.translations[currentLocale].js.composer.this = "this";
-  // I18n.translations[currentLocale].js.composer.deleted_button_text = "Delete Text";
+  // I18n.translations[currentLocale].js.composer.deleted_button_text = "Deleted Text";
 
   api.modifyClass("controller:composer", {
     pluginId: "deleted",
