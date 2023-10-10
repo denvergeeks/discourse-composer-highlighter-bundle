@@ -1,9 +1,9 @@
 {
-  "name": "Composer Deleted Button",
+  "name": "Composer Inserted Deleted Button",
   "component": true,
   "authors": "@denvergeeks",
-  "about_url": "https://github.com/denvergeeks/discourse-composer-deleted",
-  "about": "Adds a deleted (<del>this</del>) button to the composer",
+  "about_url": "https://github.com/denvergeeks/discourse-composer-inserted-deleted",
+  "about": "Adds inserted (<ins>this</ins>) and deleted (<del>this</del>) buttons to the composer",
   "version": 0.1,
   "assets": {
    "icons-sprite": "/assets/highlighter.svg"
