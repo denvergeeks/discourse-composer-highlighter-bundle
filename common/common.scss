@@ -1,52 +1,52 @@
-// * insert background color override * //
+// * delete background color override * //
 
-button.btn.no-text.btn-icon.composer_insert_button:after {
+button.btn.no-text.btn-icon.composer_delete_button:after {
   position: absolute;
   content: "__";
   color: var(--primary-medium);
-  /* padding-bottom: 15px; */
+  padding-bottom: 15px;
 }
 
-@if $insert_background_color_override !="" {
+@if $delete_background_color_override !="" {
 
-  button.btn.no-text.btn-icon.composer_insert_button {
-    color: $insert_background_color_override;
+  button.btn.no-text.btn-icon.composer_delete_button {
+    color: $delete_background_color_override;
   }
 
   .cooked,
   .d-editor-preview {
-    ins {
-      background-color: $insert_background_color_override;
+    del {
+      background-color: $delete_background_color_override;
       border-radius: 3px;
-      outline: 2px solid $insert_background_color_override;
+      outline: 2px solid $delete_background_color_override;
     }
   }
 }
 
 @else {
 
-  button.btn.no-text.btn-icon.composer_insert_button {
-    color: var(--success-low) !important;
+  button.btn.no-text.btn-icon.composer_delete_button {
+    color: var(--danger-low) !important;
   }
  
   .cooked,
   .d-editor-preview {
-    ins {
-      background-color: var(--success-low);
+    del {
+      background-color: var(--danger-low);
       border-radius: 3px;
-      outline: 2px solid var(--success-low);
+      outline: 2px solid var(--danger-low);
     }
   }
 }
 
 // * insert text color override * //
 
-@if $insert_text_color_override !="" {
+@if $delete_text_color_override !="" {
 
   .cooked,
   .d-editor-preview {
-    ins {
-      color: $insert_text_color_override;
+    del {
+      color: $delete_text_color_override;
     }
   }
 }
@@ -55,7 +55,7 @@ button.btn.no-text.btn-icon.composer_insert_button:after {
 
   .cooked,
   .d-editor-preview {
-    ins {
+    del {
       color: var(--color);
     }
   }
