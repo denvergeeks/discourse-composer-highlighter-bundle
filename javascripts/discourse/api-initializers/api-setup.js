@@ -20,6 +20,9 @@ export default apiInitializer("0.11.1", (api) => {
   const { iconNode } = require("discourse-common/lib/icon-library");
   let icon = iconNode("highlighter");
   const currentLocale = I18n.currentLocale();
+
+  // inserted button
+  
   // I18n.translations[currentLocale].js.inserted_button_title = I18n.t(themePrefix("composer_inserted_button_title"));
   // I18n.translations[currentLocale].js.composer.inserted_button_text = I18n.t(themePrefix("composer_inserted_button_text"));
   I18n.translations[currentLocale].js.inserted_button_title = "Inserted Text";
@@ -35,7 +38,7 @@ export default apiInitializer("0.11.1", (api) => {
     },
   });
 
-  // add button to the toolbar
+  // add inserted button to the toolbar
   api.onToolbarCreate((toolbar) => {
     toolbar.addButton({
       id: "composer_inserted_button",
@@ -59,7 +62,7 @@ export default apiInitializer("0.11.1", (api) => {
   );
 
 
-  
+  // deleted button  
 
   // I18n.translations[currentLocale].js.deleted_button_title = I18n.t(themePrefix("composer_deleted_button_title"));
   // I18n.translations[currentLocale].js.composer.deleted_button_text = I18n.t(themePrefix("composer_deleted_button_text"));
@@ -76,7 +79,7 @@ export default apiInitializer("0.11.1", (api) => {
     },
   });
 
-  // add button to the toolbar
+  // add deleted button to the toolbar
   api.onToolbarCreate((toolbar) => {
     toolbar.addButton({
       id: "composer_deleted_button",
