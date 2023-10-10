@@ -60,7 +60,6 @@ export default apiInitializer("0.11.1", (api) => {
 
 
   
-  let icon = iconNode("highlighter");
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.deleted_button_title = I18n.t(themePrefix("composer_deleted_button_title"));
   // I18n.translations[currentLocale].js.composer.deleted_button_text = I18n.t(themePrefix("composer_deleted_button_text"));
