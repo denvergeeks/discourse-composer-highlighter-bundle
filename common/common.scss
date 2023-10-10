@@ -1,4 +1,4 @@
-// * delete background color override * //
+// * deleted background color override * //
 
 button.btn.no-text.btn-icon.composer_deleted_button:after {
   position: absolute;
@@ -7,10 +7,10 @@ button.btn.no-text.btn-icon.composer_deleted_button:after {
   padding-bottom: 15px;
 }
 
-@if $delete_background_color_override !="" {
+@if $deleted_background_color_override !="" {
 
   button.btn.no-text.btn-icon.composer_deleted_button {
-    color: $delete_background_color_override;
+    color: $deleted_background_color_override;
   }
 
   .cooked,
