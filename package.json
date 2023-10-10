@@ -1,7 +1,7 @@
 {
-  "name": "discourse-composer-insert",
+  "name": "discourse-composer-delete",
   "version": "0.0.2",
-  "repository": "https://github.com/denvergeeks/discourse-composer-insert",
+  "repository": "https://github.com/denvergeeks/discourse-composer-delete",
   "author": "denvergeeks",
   "license": "MIT"
 }
