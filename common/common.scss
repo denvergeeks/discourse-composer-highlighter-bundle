@@ -1,3 +1,75 @@
+// * inserted background color override * //
+
+button.btn.no-text.btn-icon.composer_inserted_button:after {
+  position: absolute;
+  content: "__";
+  color: var(--primary);
+  /* padding-bottom: 15px; */
+}
+
+@if $inserted_background_color_override !="" {
+
+  button.btn.no-text.btn-icon.composer_inserted_button {
+    color: var(--primary);
+    background-color: $inserted_background_color_override;
+    box-shadow: inset 0 0 0 5px var(--secondary);
+    border-radius: 10px;
+    border: none;
+  }
+
+  .cooked,
+  .d-editor-preview {
+    ins {
+      background-color: $inserted_background_color_override;
+      border-radius: 3px;
+      outline: 2px solid $inserted_background_color_override;
+    }
+  }
+}
+
+@else {
+
+  button.btn.no-text.btn-icon.composer_inserted_button {
+    color: var(--primary);
+    background-color: var(--success-low);
+    box-shadow: inset 0 0 0 5px var(--secondary);
+    border-radius: 10px;
+    border: none;
+  }
+ 
+  .cooked,
+  .d-editor-preview {
+    ins {
+      background-color: var(--success-low);
+      border-radius: 3px;
+      outline: 2px solid var(--success-low);
+    }
+  }
+}
+
+// * inserted text color override * //
+
+@if $inserted_text_color_override !="" {
+
+  .cooked,
+  .d-editor-preview {
+    ins {
+      color: $inserted_text_color_override;
+    }
+  }
+}
+
+@else {
+
+  .cooked,
+  .d-editor-preview {
+    ins {
+      color: var(--color);
+    }
+  }
+}
+
+
 // * deleted background color override * //
 
 button.btn.no-text.btn-icon.composer_deleted_button:after {
