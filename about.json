@@ -1,9 +1,9 @@
 {
-  "name": "Composer Delete Button",
+  "name": "Composer Deleted Button",
   "component": true,
   "authors": ["denvergeeks", "Jay Pfaffman"],
-  "about_url": "https://github.com/denvergeeks/discourse-composer-delete",
-  "about": "Adds a delete (<del>this</del>) button to the composer",
+  "about_url": "https://github.com/denvergeeks/discourse-composer-deleted",
+  "about": "Adds a deleted (<del>this</del>) button to the composer",
   "version": 0.1,
   "assets": {
    "icons-sprite": "/assets/highlighter.svg"
