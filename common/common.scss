@@ -1,6 +1,6 @@
 // * delete background color override * //
 
-button.btn.no-text.btn-icon.composer_delete_button:after {
+button.btn.no-text.btn-icon.composer_deleted_button:after {
   position: absolute;
   content: "__";
   color: var(--primary-medium);
@@ -9,23 +9,23 @@ button.btn.no-text.btn-icon.composer_delete_button:after {
 
 @if $delete_background_color_override !="" {
 
-  button.btn.no-text.btn-icon.composer_delete_button {
+  button.btn.no-text.btn-icon.composer_deleted_button {
     color: $delete_background_color_override;
   }
 
   .cooked,
   .d-editor-preview {
     del {
-      background-color: $delete_background_color_override;
+      background-color: $deleted_background_color_override;
       border-radius: 3px;
-      outline: 2px solid $delete_background_color_override;
+      outline: 2px solid $deleted_background_color_override;
     }
   }
 }
 
 @else {
 
-  button.btn.no-text.btn-icon.composer_delete_button {
+  button.btn.no-text.btn-icon.composer_deleted_button {
     color: var(--danger-low) !important;
   }
  
@@ -41,12 +41,12 @@ button.btn.no-text.btn-icon.composer_delete_button:after {
 
 // * insert text color override * //
 
-@if $delete_text_color_override !="" {
+@if $deleted_text_color_override !="" {
 
   .cooked,
   .d-editor-preview {
     del {
-      color: $delete_text_color_override;
+      color: $deleted_text_color_override;
     }
   }
 }
