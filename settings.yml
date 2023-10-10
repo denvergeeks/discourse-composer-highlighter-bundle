@@ -3,14 +3,14 @@ svg_icons:
   type: "list"
   list_type: "compact"
 
-insert_background_color_override:
+deleted_background_color_override:
   type: string
   default: ""
   description:
-    en: "The color of the background of the inserted selections, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for <ins></ins>. Note that changing this will apply the new background color to already existing inserts throughout the site."
+    en: "The color of the background of the deleted selections, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for <del></del>. Note that changing this will apply the new background color to already existing deleted text throughout the site."
 
-insert_text_color_override:
+deleted_text_color_override:
   type: string
   default: ""
   description:
-    en: "The color of the text in the inserted selections, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for the (normal text) color. Note that changing this will apply the new text color to already existing inserts throughout the site."
+    en: "The color of the text in the deleted selections, in hexadecimal, css color name or Discourse color variable. Leave this blank to use the current theme's CSS default for the (normal text) color. Note that changing this will apply the new text color to already existing deleted text throughout the site."
