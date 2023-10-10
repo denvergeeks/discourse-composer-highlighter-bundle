@@ -1,7 +1,7 @@
 {
   "name": "Composer Deleted Button",
   "component": true,
-  "author": "@denvergeeks",
+  "authors": "@denvergeeks",
   "about_url": "https://github.com/denvergeeks/discourse-composer-deleted",
   "about": "Adds a deleted (<del>this</del>) button to the composer",
   "version": 0.1,
