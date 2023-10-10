@@ -13,6 +13,7 @@ button.btn.no-text.btn-icon.composer_deleted_button:after {
     color: var(--primary);
     background-color: $deleted_background_color_override;
     box-shadow: inset 0 0 0 5px var(--secondary);
+    border-radius: 10px;
     border: none;
   }
 
@@ -32,6 +33,7 @@ button.btn.no-text.btn-icon.composer_deleted_button:after {
     color: var(--primary);
     background-color: var(--danger-low);
     box-shadow: inset 0 0 0 5px var(--secondary);
+    border-radius: 10px;
     border: none;
   }
  
